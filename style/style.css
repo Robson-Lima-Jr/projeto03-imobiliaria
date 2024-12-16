@@ -19,6 +19,8 @@ html, body {
     max-width: 100vw;
     min-height: 100vh;
     overflow-x: hidden;
+
+    font-size: 62.5%;
 }
 
 .container_flex {
@@ -31,9 +33,51 @@ html, body {
     gap: 40px;
 }
 
-/* topo */
+.container_base {
+    width: 100%;
+    max-width: 1024px;
+    padding: 20px;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* topo */
 .topo-fundo {
     width: 100%;
     background-color: var(--corAzulClaro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#topo_base {
+    padding-bottom: 30px;
+    gap: 20px;
+}
+
+#logo {
+    width: 150px;
+    height: 150px;
+}
+
+.links_nav {
+    display: flex;
+    gap: 30px;
+}
+
+.links_nav a {
+    padding-bottom: 2px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(83, 78, 78);
+    font-size: 1.8rem;
+    border-bottom: 2px solid rgb(83, 78, 78);
+}
+
+.links_nav a:hover {
+    color: black;
+    border-color: black;
 }
