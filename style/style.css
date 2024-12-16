@@ -13,6 +13,7 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: Tahoma, sans-serif;
+    scroll-behavior: smooth;
 }
 
 html,
@@ -22,6 +23,10 @@ body {
     overflow-x: hidden;
 
     font-size: 62.5%;
+}
+
+img {
+    object-fit: cover;
 }
 
 .container_flex {
