@@ -1,154 +1,312 @@
+/* gerais */
+
 @charset "UTF-8";
+
+:root {
+    --corAzulClaro: #AFDDFB;
+    --corAzulEscuro: #3082C0;
+    --corAmarela: #FCEE1E;
+}
 
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-}
-
-body {
     font-family: Tahoma, sans-serif;
 }
 
-.section {
-    text-align: center;
-    padding: 30px 0px;
+html,
+body {
+    max-width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+
+    font-size: 62.5%;
 }
 
-.section p {
-    margin: 10px auto;
-    width: 980px;
-    text-align: justify;
-    font-size: 18px;
-    line-height: 28px;
+.container_flex {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
 }
 
-.menu {
-    background-color: #afddfb;
-}
+.container_base {
+    width: 100%;
+    max-width: 1024px;
+    padding: 20px;
 
-.menu img {
-    width: 150px;
-}
-
-.menu p {
-    margin-top: 15px;
-    margin-bottom: 25px;
-    text-align: center;
-}
-
-.menu a {
-    margin: 0px 10px;
-    color: #1d1d1d;
-    text-decoration: none;
-    border-bottom: 2px solid #1d1d1d;
-}
-
-.banner {
-    margin-top: 50px;
-    padding-top: 0px;
-}
-
-span {
-    font-weight: bold;
-}
-
-
-h1 {
-    margin-bottom: 5px;
-    color: #1d1d1d;
-}
-
-h2 {
-    margin-top: 0px;
-    color: #1c81c0;
-    font-weight: normal;
-}
-
-h3 {
-    color: #ffffff;
-    font-size: 28px;
-    line-height: 42px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .fonte-azul {
-    color: #1c81c0;
+    color: var(--corAzulEscuro);
     font-weight: bold;
 }
 
 .fonte-amarela {
-    color: #fff81b;
+    color: var(--corAmarela);
     font-weight: bold;
 }
 
-#sobre img,
-#corretores img {
-    width: 450px;
-    margin-top: 25px;
+/* topo */
+.topo-fundo {
+    width: 100%;
+    background-color: var(--corAzulClaro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#topo_base {
+    padding-bottom: 30px;
+    gap: 20px;
+}
+
+#logo {
+    width: 150px;
+    height: 150px;
+}
+
+.links_nav {
+    display: flex;
+    gap: 30px;
+}
+
+.links_nav a {
+    padding-bottom: 2px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(83, 78, 78);
+    font-size: 1.8rem;
+    border-bottom: 2px solid rgb(83, 78, 78);
+}
+
+.links_nav a:hover {
+    color: black;
+    border-color: black;
+}
+
+/* banner */
+#logo_banner {
+    width: 100%;
+    height: auto;
+    min-height: 300px;
+    max-width: 1024px;
+}
+
+/* sobre */
+#sobre {
+    gap: 25px;
+}
+
+#imagem_sobre {
+    width: 100%;
+    max-width: 450px;
+}
+
+.sobre_titulos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.sobre_titulos h1 {
+    font-size: 3.1rem;
+}
+
+.sobre_titulos h2 {
+    font-size: 2.2rem;
+    font-weight: 300;
+    color: var(--corAzulEscuro);
+}
+
+#sobre p {
+    font-size: 1.8rem;
+    line-height: 30px;
+    text-align: justify;
+}
+
+/* servicos */
+.fundo_servicos {
+    width: 100%;
+    background-color: var(--corAzulEscuro);
+    display: flex;
+    justify-content: center;
 }
 
 #servicos {
-    background-color: #1c81c0;
+    padding: 50px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: white;
+}
+
+#servicos h3 {
+    font-size: 2.4rem;
 }
 
 #servicos p {
-    width: 700px;
-    text-align: center;
-    color: #ffffff;
-    font-size: 22px;
-    line-height: 42px;
+    width: 100%;
+    max-width: 667px;
+    font-size: 1.8rem;
+    text-align: justify;
+    line-height: 35px;
 }
 
 #servicos ul {
-    margin: 40px auto;
-    width: 135px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
-#servicos li {
-    text-align: left;
-    color: #ffffff;
-    font-size: 22px;
-    line-height: 42px;
+#servicos ul li {
+    font-size: 1.7rem;
+}
+
+/* corretores */
+#corretores {
+    gap: 20px;
 }
 
 #corretores h3 {
-    color: #1c81c0;
+    color: var(--corAzulEscuro);
+    font-size: 2.4rem;
+}
+
+#corretores img {
+    width: 100%;
+    max-width: 450px;
+}
+
+#corretores p {
+    font-size: 1.8rem;
+    text-align: justify;
+    line-height: 35px;
+}
+
+.links_corretores {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(83, 78, 78);
+    border-bottom: 2px solid rgb(83, 78, 78);
+}
+
+.links_corretores:hover {
+    color: black;
+    border-color: black;
+}
+
+/* contato */
+.contato_fundo {
+    width: 100%;
+    background-color: var(--corAzulEscuro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #contato {
-    background-color: #1c81c0;
+    padding: 30px 20px;
+    display: flex;
+    gap: 20px;
+    color: white;
+    margin-bottom: 15px;
 }
 
-#contato iframe {
-    width: 700px;
+#contato h3 {
+    font-size: 2.4rem;
+}
+
+iframe {
+    width: 100%;
+    max-width: 1024px;
     height: 350px;
-    margin-top: 25px;
 }
 
 #contato p {
-    margin: 30px auto;
-    padding: 10px;
-    text-align: center;
-    font-size: 17px;
-    background-color: #1d1d1d;
-    color: #ffffff;
+    width: 100%;
+    padding: 10px 15px;
+    background-color: rgb(39, 37, 37);
+    font-size: 1.8rem;
+    text-align: justify;
 }
 
 #contato ul {
-    margin: 40px auto;
-    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-#contato li {
-    margin-top: 15px;
+#contato ul li {
     list-style-type: none;
-    font-size: 18px;
     text-align: center;
 }
 
-#contato a {
-    padding: 2px 5px;
-    background-color: #ffffff;
-    color: #1c81c0;
-    border-radius: 5px;
+#contato ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.7rem;
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+}
+
+#contato ul li a:hover {
+    color: var(--corAmarela);
+    border-color: var(--corAmarela);
+}
+
+/* footer */
+.footer_fundo {
+    width: 100%;
+    margin: -30px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(39, 37, 37);
+}
+
+#rodape {
+    display: flex;
+    gap: 10px;
+    font-size: 1.8rem;
+    color: white;
+}
+
+#rodape a {
+    text-decoration: none;
+    padding: 5px;
+    font-weight: bold;
+}
+
+#link_curso {
+    color: rgb(32, 194, 32);
+}
+
+#link_nome {
+    color: var(--corAmarela);
+}
+
+/* media query */
+
+@media screen and (max-width: 450px){
+    .links_nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #logo_banner {
+        height: 220px;
+    }
 }
