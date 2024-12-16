@@ -31,7 +31,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 30px;
 }
 
 .container_base {
@@ -47,6 +47,11 @@ body {
 
 .fonte-azul {
     color: var(--corAzulEscuro);
+    font-weight: bold;
+}
+
+.fonte-amarela {
+    color: var(--corAmarela);
     font-weight: bold;
 }
 
@@ -127,3 +132,77 @@ body {
     line-height: 30px;
     text-align: justify;
 }
+
+/* servicos */
+.fundo_servicos {
+    width: 100%;
+    background-color: var(--corAzulEscuro);
+    display: flex;
+    justify-content: center;
+}
+
+#servicos {
+    padding: 50px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: white;
+}
+
+#servicos h3 {
+    font-size: 2.4rem;
+}
+
+#servicos p {
+    width: 100%;
+    max-width: 667px;
+    font-size: 1.8rem;
+    text-align: justify;
+    line-height: 35px;
+}
+
+#servicos ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#servicos ul li {
+    font-size: 1.7rem;
+}
+
+/* corretores */
+#corretores {
+    gap: 20px;
+}
+
+#corretores h3 {
+    color: var(--corAzulEscuro);
+    font-size: 2.4rem;
+}
+
+#corretores img {
+    width: 100%;
+    max-width: 450px;
+}
+
+#corretores p {
+    font-size: 1.8rem;
+    text-align: justify;
+    line-height: 35px;
+}
+
+.links_corretores {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(83, 78, 78);
+    border-bottom: 2px solid rgb(83, 78, 78);
+}
+
+.links_corretores:hover {
+    color: black;
+    border-color: black;
+}
+
+/* contato */
