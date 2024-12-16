@@ -8,14 +8,15 @@
     --corAmarela: #FCEE1E;
 }
 
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family: Tahoma, sans-serif;
 }
 
-html, body {
+html,
+body {
     max-width: 100vw;
     min-height: 100vh;
     overflow-x: hidden;
@@ -42,6 +43,11 @@ html, body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.fonte-azul {
+    color: var(--corAzulEscuro);
+    font-weight: bold;
 }
 
 /* topo */
@@ -80,4 +86,44 @@ html, body {
 .links_nav a:hover {
     color: black;
     border-color: black;
+}
+
+/* banner */
+#logo_banner {
+    width: 100%;
+    max-width: 1024px;
+}
+
+/* sobre */
+#sobre {
+    gap: 25px;
+}
+
+#imagem_sobre {
+    width: 100%;
+    max-width: 450px;
+}
+
+.sobre_titulos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.sobre_titulos h1 {
+    font-size: 3.1rem;
+}
+
+.sobre_titulos h2 {
+    font-size: 2.2rem;
+    font-weight: 300;
+    color: var(--corAzulEscuro);
+}
+
+#sobre p {
+    font-size: 1.8rem;
+    line-height: 30px;
+    text-align: justify;
 }
