@@ -26,7 +26,6 @@ body {
 
 .container_flex {
     height: 100%;
-    margin-bottom: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -96,6 +95,8 @@ body {
 /* banner */
 #logo_banner {
     width: 100%;
+    height: auto;
+    min-height: 300px;
     max-width: 1024px;
 }
 
@@ -206,3 +207,106 @@ body {
 }
 
 /* contato */
+.contato_fundo {
+    width: 100%;
+    background-color: var(--corAzulEscuro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contato {
+    padding: 30px 20px;
+    display: flex;
+    gap: 20px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+#contato h3 {
+    font-size: 2.4rem;
+}
+
+iframe {
+    width: 100%;
+    max-width: 1024px;
+    height: 350px;
+}
+
+#contato p {
+    width: 100%;
+    padding: 10px 15px;
+    background-color: rgb(39, 37, 37);
+    font-size: 1.8rem;
+    text-align: justify;
+}
+
+#contato ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#contato ul li {
+    list-style-type: none;
+    text-align: center;
+}
+
+#contato ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.7rem;
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+}
+
+#contato ul li a:hover {
+    color: var(--corAmarela);
+    border-color: var(--corAmarela);
+}
+
+/* footer */
+.footer_fundo {
+    width: 100%;
+    margin: -30px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(39, 37, 37);
+}
+
+#rodape {
+    display: flex;
+    gap: 10px;
+    font-size: 1.8rem;
+    color: white;
+}
+
+#rodape a {
+    text-decoration: none;
+    padding: 5px;
+    font-weight: bold;
+}
+
+#link_curso {
+    color: rgb(32, 194, 32);
+}
+
+#link_nome {
+    color: var(--corAmarela);
+}
+
+/* media query */
+
+@media screen and (max-width: 450px){
+    .links_nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #logo_banner {
+        height: 220px;
+    }
+}
